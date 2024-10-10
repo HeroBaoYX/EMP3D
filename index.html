@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMP3D Project Page</title>
+  <!-- Bootstrap -->
+  <link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="page_container">
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center">EMP3D: An Emergency Medical Procedures dataset with pose and shape</h2>
+              <p class="text-center">&nbsp;</p>
+              <h6 class="text-center">
+                Hailong Jia<sup>1,†</sup>,
+                <!-- <a href="https://fengq1a0.github.io/">XXX</a><sup>1,†</sup>, -->
+                <a href="https://xiaonan12138.github.io/">Haoyang Ge</a><sup>1</sup>,
+                Xiangjun Yin<sup>2</sup>,
+                <a href="https://zhouyou-nju.github.io/">You Zhou</a><sup>3</sup>,
+                <a href="https://seea.tju.edu.cn/info/1015/1608.htm">Jingyu Yang</a><sup>2</sup>,
+                <a href="http://cic.tju.edu.cn/faculty/likun/">Kun Li</a><sup>1*</sup>
+              </h6>
+              <p class="text-center"> <sup>1</sup>College of Intelligence and Computing, Tianjin University &nbsp; </p>
+              <p class="text-center"> <sup>2</sup>School of Electrical and Information Engineering, Tianjin University &nbsp; </p>
+              <!-- <p class="text-center"> <sup>3</sup>Medical School, Nanjing University &nbsp; </p> -->
+              <p class="text-center"> 
+                &nbsp; <sup>†</sup>Equal contribution&nbsp; <sup>*</sup> Corresponding author
+              </p>
+              <p class="text-center">&nbsp;</p>
+              <h5 class="text-center" style="margin-bottom: 0;">
+                
+                <a href="https://github.com/super-dinosaur/EMP3D.github.io" target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://your-dataset-link" target="_blank">
+                  <i class="fas fa-database"></i> Datasets 
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container reduce-spacing">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-center">
+            <h2>Abstract</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-justify">
+            <p>EMP3D is a groundbreaking dataset specifically designed to advance emergency medical training through the modeling and analysis of healthcare providers' movements during critical medical procedures. Addressing limitations in existing datasets, EMP3D offers an unparalleled depth of detail, utilizing advanced 3D modeling to capture and standardize the precise actions of medical personnel rather than merely focusing on patient postures. This comprehensive approach ensures that healthcare interventions are accurately documented, aiding in both training and procedural standardization.</p>
+            <p>The dataset comprises over 1,000,000 frames of 4K high-definition images, meticulously annotated with precise 3D SMPLH parameters. The data collection process employs a multi-camera setup, synchronized using sound signals to generate accurate 3D joint points through advanced 4D association techniques. EMP3D encompasses a wide range of emergency actions, including hemostasis, bandaging (subdivided into specific areas like head and arm), fracture fixation, and life-saving interventions like airway obstruction management and cardiopulmonary resuscitation. The dataset's professional-grade curation ensures high accuracy, making it an invaluable resource for enhancing emergency response training and bridging the gap in public and professional medical education.</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <img src="images/fig1_original.png" width="1000" alt="" class="img-fluid" style="margin-top: -70px;"/>
+        </div>
+        <hr>
+
+        <div class="container increase-spacing">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+              <h2>Collection</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-justify">
+              <p>The data collection process for EMP3D is meticulously designed to accurately capture the movements of medical personnel during emergency procedures. Six GoPro cameras are strategically positioned around a simulated medical environment to capture multiple critical perspectives. The video streams from these cameras are synchronized using sound signals, ensuring precise alignment across all six viewpoints. Advanced 2D pose estimation techniques are then applied to each viewpoint, and 4D association methods integrate these 2D joint points into a unified 3D model. To enhance the accuracy of the data, a two-stage optimization process is employed, converting the 3D joint information into parameterized SMPLH models. This ensures a detailed and precise representation of the movements. All data collection is conducted by trained professionals to guarantee the authenticity and reliability of the actions recorded. The final EMP3D dataset includes a comprehensive range of emergency procedures, such as hemostasis, bandaging (categorized into specific areas like head and arm), fracture fixation, airway obstruction management, and cardiopulmonary resuscitation, all rigorously annotated and validated for consistency.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="container increase-spacing">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+              <h2>Download</h2>
+              <p class="text-center">The dataset is accessible at: <a href="https://www.github.com" target="_blank">EMP3D</a>.</p>
+            </div>
+          </div>
+
+        <hr>
+
+        <div class="container increase-spacing">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+              <h2>Data Structure</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-justify">
+              <p>The EMP3D dataset is structured as follows:</p>
+              <pre>
+                EMP3D
+                  ├── Rescue Category
+                         ├── yyyymmdd_xxxxxxxx_
+                                   ├── frames
+                                   |      ├── smpl_parameter
+                                   |      ├── 2d_keypoints
+                                   |
+                                   ├────── cameras
+                                   ├────── videos
+              </pre>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="container increase-spacing">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+              <h2>Contact us</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 text-justify">
+              <p>If you have any questions or suggestions, please feel free to contact us at: <a href="mailto:bhh@tju.edu.cn">bhh@tju.edu.cdn</a>.
+              </h5>
+              Address: Building 55, Tianjin University Beiyangyuan Campus, 135 Yaguan Road, Haihe Education Park, Jinnan District, Tianjin</p>
+        </div>
+  </section>
+
+  <div class="jumbotron"> </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap-4.0.0.js"></script>
+</body>
+
+</html>

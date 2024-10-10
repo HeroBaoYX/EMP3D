@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .custom-font {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
+  p {
+    margin-bottom: 1.5em;
+  }
+  
+  h2, h5, h6 {
+    font-weight: 600;
+  }
+  
+  .container p, .container h2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+  
+  .reduce-spacing h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .increase-spacing h2 {
+    margin-top: 10px;
+  }
