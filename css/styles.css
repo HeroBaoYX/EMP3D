@@ -33,3 +33,8 @@ body {
   .increase-spacing h2 {
     margin-top: 10px;
   }
+
+  /* .increase-spacing .row{
+    display: flex;
+    align-items: center;
+  } */
