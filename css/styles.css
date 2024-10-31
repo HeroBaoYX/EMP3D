@@ -70,7 +70,7 @@
     margin-top: 10px;
   }
 
-.author-info {
+h6.author-info {
     margin-bottom: 100em; /* 调整这个值来增加或减少间距 */
 }
 
